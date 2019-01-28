@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/contentTambahCalon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapperTambahCalon1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <EditText
+                android:id="@+id/editTextNomorTambahCalon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_account_circle_black_18dp"
+                android:hint="Nomor Urut"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:paddingRight="9.2dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapperTambahCalon2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            tools:hintAnimationEnabled="true"
+            tools:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/editTextNamaTambahCalon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:hint="Nama"
+                android:inputType="textCapWords"
+                android:paddingLeft="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapperTambahCalon3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <EditText
+                android:id="@+id/editTextDeskripsiTambahCalon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:hint="Deskripsi"
+                android:inputType="textCapWords|textMultiLine"
+                android:paddingLeft="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:id="@+id/editTextTanggalTambahCalon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:hint="Tanggal Lahir"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="8dp" />
+
+        <ImageView
+            android:id="@+id/imageViewTambahCalon"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/no_preview"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonTambahCalon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/birumuda"
+            android:text="Daftar"
+            android:textColor="@android:color/white">
+
+        </android.support.v7.widget.AppCompatButton>
+
+    </LinearLayout>
+
+</ScrollView>

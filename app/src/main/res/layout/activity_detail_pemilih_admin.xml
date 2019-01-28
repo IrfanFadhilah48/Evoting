@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".activity.admin.DetailPemilihAdminActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NPM                   : "
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/textViewNpmDetailPemilih"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="22sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama                 : "
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/textViewNamaDetailPemilih"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="aa"
+                        android:textSize="22sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin   : "
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/textViewJkelDetailPemilih"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="aa"
+                        android:textSize="22sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Pas Foto            : "
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imageViewFotoDetailPemilih"
+                android:layout_width="180dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:src="@drawable/no_preview" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Foto KTM            : "
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imageViewFoto2DetailPemilih"
+                android:layout_width="270dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/no_preview" />
+
+            <Button
+                android:id="@+id/buttonVerifikasiDetailPemilih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/birumuda"
+                android:text="Verifikasi" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarDetailPemilih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

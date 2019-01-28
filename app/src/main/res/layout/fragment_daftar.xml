@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/contentPeserta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapper1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <EditText
+                android:id="@+id/editTextNpmDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_account_circle_black_18dp"
+                android:hint="NPM"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:paddingRight="9.2dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapper2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:passwordToggleDrawable="@drawable/icon_selector"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black">
+
+            <EditText
+                android:id="@+id/editTextPasswordDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrapper3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <EditText
+                android:id="@+id/editTextNamaDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:hint="Nama"
+                android:inputType="textCapWords"
+                android:paddingLeft="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Jenis Kelamin"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButton0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peremepuan"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageViewDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/no_preview"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewProfileDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/no_preview"
+            android:layout_marginTop="10dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonDaftarPeserta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/birumuda"
+            android:text="Daftar"
+            android:textColor="@android:color/white">
+
+        </android.support.v7.widget.AppCompatButton>
+
+    </LinearLayout>
+</ScrollView>

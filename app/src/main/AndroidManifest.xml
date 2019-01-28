@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.windowsv8.e_voting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.pemilih.CekNPMActivity" />
+        <activity
+            android:name=".activity.pemilih.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.pemilih.DaftarCalonActivity" />
+        <activity android:name=".activity.pemilih.JumlahPemilihActivity" />
+        <activity android:name=".activity.pemilih.PemilihanActivity" />
+        <activity android:name=".activity.pemilih.PerhitunganSuaraActivity" />
+        <activity android:name=".activity.pemilih.DaftarAdminActivity" />
+        <activity android:name=".activity.admin.LoginAdminActivity" />
+        <activity android:name=".activity.admin.MenuAdminActivity" />
+        <activity android:name=".activity.admin.TambahCalonActivity" />
+        <activity android:name=".activity.admin.DaftarCalonAdminActivity" />
+        <activity android:name=".activity.admin.DaftarPemilihAdminActivity" />
+        <activity android:name=".activity.admin.TambahPemilihActivity"/>
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".fcm.MyFirebaseInstanceServices">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.admin.DetailPemilihAdminActivity"></activity>
+    </application>
+
+</manifest>

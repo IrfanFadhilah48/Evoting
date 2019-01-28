@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentCek"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:id="@+id/container_peserta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_account_circle_black_18dp"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+            android:paddingRight="9.2dp"
+            android:layout_marginBottom="10dp" >
+
+            <EditText
+                android:id="@+id/editTextNpmCek"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:hint="NPM"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:paddingRight="9.2dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonCekPeserta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/birumuda"
+            android:text="Cek Peserta"
+            android:textColor="@android:color/white">
+
+        </android.support.v7.widget.AppCompatButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

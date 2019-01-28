@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "107710932356",
+    "firebase_url": "https://e-voting-2704d.firebaseio.com",
+    "project_id": "e-voting-2704d",
+    "storage_bucket": "e-voting-2704d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107710932356:android:fce5c2b67bf58f26",
+        "android_client_info": {
+          "package_name": "com.example.windowsv8.e_voting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107710932356-64judrg70cb202c35p5200gs1ld6phls.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.windowsv8.e_voting",
+            "certificate_hash": "04a61af7d09db2a926845df0988e03eb272ef824"
+          }
+        },
+        {
+          "client_id": "107710932356-o081fjbg0dnvq37lm3v2l3s5iql1dko5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRZgBU6xRdKP_-ATQzOcGZhrhShd5QveY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107710932356-o081fjbg0dnvq37lm3v2l3s5iql1dko5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
